@@ -19,7 +19,7 @@ scene.add(directionalLight);
 let model;
 const loader = new THREE.GLTFLoader();
 loader.load(
-  './models/shiba.glb',
+  './shiba.glb',
   (gltf) => {
     model = gltf.scene;
     scene.add(model);
