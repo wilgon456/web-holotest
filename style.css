@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.navyBtn {
+    width: 50%;
+    height: 40px;
+    align-items: center;
+}
+
+#pointer {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red !important; /* 🔴 확실히 보이도록 설정 */
+    pointer-events: none; /* ✅ 클릭 이벤트 무시 */
+    z-index: 99999 !important; /* ✅ 가장 위에 표시 */
+    display: block !important; /* ✅ CSS 우선순위 강제 적용 */
+    opacity: 1 !important; /* ✅ 투명도 문제 해결 */
+}
+
+#viewer {
+    width: 100%;
+    height: 100%;
+    overflow: visible !important; /* ✅ 포인터가 가려지지 않도록 변경 */
+}
+
+/* 상태창 스타일 */
+#statusBox {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    background-color: red; /* 기본 커서 모드 */
+    z-index: 2000;
+}
+

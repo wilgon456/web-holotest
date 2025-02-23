@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>손 제스처 기반 3D 모델 컨트롤</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button type="button" class="navyBtn" onClick="location.href='con.html'">move</button>
+
+    <!-- 상태창 (커서 모드 / 모델 조작 모드 표시) -->
+    <div id="statusBox">Mode</div>
+
+
+
+    <div id="viewer"></div>
+
+
+
+    <!-- 웹캠 입력용 video (화면에 보이지 않음) -->
+    <video id="input_video" style="display:none;"></video>
+
+    <!-- Three.js 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <!-- GLTFLoader -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/loaders/GLTFLoader.js"></script>
+    <!-- MediaPipe Hands 라이브러리 -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <!-- MediaPipe Camera Utils -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+    <!-- app.js는 defer 속성 추가하여 마지막에 실행 -->
+    <script src="app.js" defer></script>
+</body>
+</html>
